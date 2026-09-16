@@ -54,7 +54,7 @@ const SOULVERSE_CONFIG = {
   // Official Social Media Channels
   socials: {
     instagram: "https://instagram.com/Prathibasenthil.official",
-    youtube: "https://youtube.com/@Prathibasenthil",
+    youtube: "https://www.youtube.com/@Prathibas33",
     twitter: "https://twitter.com/Prathibasenthil",
     linkedin: "https://linkedin.com/company/Prathibasenthil",
     spotify: "https://spotify.com/show/Prathibasenthil-meditations"

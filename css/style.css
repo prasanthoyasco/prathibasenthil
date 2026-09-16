@@ -558,3 +558,15 @@ nav a:hover, nav a.active {
         margin-right: auto;
     }
 }
+
+/* Footer */
+.site-footer {
+    padding: 4rem 0 2rem;
+    border-top: 1px solid rgba(200, 169, 107, 0.1);
+}
+.social-links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
