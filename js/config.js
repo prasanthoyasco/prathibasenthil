@@ -66,8 +66,8 @@ const SOULVERSE_CONFIG = {
       id: "job-money-manifestation",
       title: "Job / Money Manifestation Course",
       badge: "VIDEO COURSE",
-      priceDisplay: "₹2,999",
-      originalPriceDisplay: "₹4970",
+      priceDisplay: "₹3,333",
+      originalPriceDisplay: "₹4444",
       duration: "Self-Paced · 8 Modules · Lifetime Access",
       url: "course-job-money.html"
     },
@@ -75,7 +75,7 @@ const SOULVERSE_CONFIG = {
       id: "the-supernatural-mentorship",
       title: "The Supernatural",
       badge: "6 MONTH PERSONAL COURSE",
-      priceDisplay: "By Application",
+      priceDisplay: "₹9,999",
       duration: "6 Months · Bespoke 1-on-1 Mentorship",
       url: "course-supernatural.html"
     }

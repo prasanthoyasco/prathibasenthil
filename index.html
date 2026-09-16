@@ -25,7 +25,9 @@
     <meta name="twitter:description" content="A journey from the life I was given to the life I consciously created. Unlock the reality you truly deserve through intentional manifestation.">
     <meta name="twitter:image" content="https://prathibasenthil.com/img/super-natural-Manifestation-by-prathiba-senthil.jpeg">
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css?v=1.4">
+    <script src="js/lucide.min.js"></script>
     
     <!-- AI Optimization (AIO) - Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -96,8 +98,8 @@
                     <h2 class="hero-subtitle">DESIGN YOUR DESTINY</h2>
                     <h1 class="heading-hero">WELCOME</h1>
                     <p class="hero-quote">Your reality is the absolute blueprint<br>of your thoughts and emotions.</p>
-                    <button class="btn btn-primary mt-2 nav-btn" data-target="form">DESIGN YOUR DESTINY &rarr;</button>
-                    <p class="scroll-hint">Scroll to discover &darr;</p>
+                    <button class="btn btn-primary mt-2 nav-btn" data-target="form">DESIGN YOUR DESTINY <i data-lucide="arrow-right"></i></button>
+                    <p class="scroll-hint">Scroll to discover <i data-lucide="arrow-down"></i></p>
                 </div>
             </div>
 
@@ -119,7 +121,7 @@
             <div class="closing-container container fade-up text-center">
                 <h2 class="heading-section">You don't have to simply wait for your future.</h2>
                 <h2 class="heading-section text-accent mb-2">You can design your destiny.</h2>
-                <button class="btn btn-primary nav-btn" data-target="form">BEGIN YOUR JOURNEY &rarr;</button>
+                <button class="btn btn-primary nav-btn" data-target="form">BEGIN YOUR JOURNEY <i data-lucide="arrow-right"></i></button>
             </div>
         </section>
 
@@ -247,7 +249,7 @@
                     </div>
 
                     <div class="text-center mt-2">
-                        <button type="submit" class="btn btn-primary">SUBMIT YOUR JOURNEY &rarr;</button>
+                        <button type="submit" class="btn btn-primary">SUBMIT YOUR JOURNEY <i data-lucide="arrow-right"></i></button>
                     </div>
                 </form>
             </div>
@@ -293,13 +295,13 @@
                     <hr class="card-divider">
                     <p class="course-desc">Transform your relationship with money, possibility and your own potential.</p>
                     <ul class="course-features">
-                        <li>Course Overview</li>
-                        <li>What You Will Learn</li>
-                        <li>Key Benefits</li>
-                        <li>Course Format</li>
+                        <li>&#10003; Course Overview</li>
+                        <li>&#10003; What You Will Learn</li>
+                        <li>&#10003; Key Benefits</li>
+                        <li>&#10003; Course Format</li>
                     </ul>
                     <p class="course-price" style="margin-bottom: 1.5rem; font-size: 1.25rem; color: var(--color-champagne-gold);" data-config="courses.jobMoney.priceDisplay"></p>
-                    <button class="btn btn-outline detail-btn" data-target="course-detail-video">VIEW COURSE DETAILS &rarr;</button>
+                    <button class="btn btn-outline detail-btn" data-target="course-detail-video">VIEW COURSE DETAILS <i data-lucide="arrow-right"></i></button>
                 </div>
                 
                 <div class="glass-card course-card premium-card">
@@ -318,18 +320,18 @@
                         <li>&#10003; Identity & Mindset Transformation</li>
                     </ul>
                     <p class="course-price" style="margin-bottom: 1.5rem; font-size: 1.25rem; color: var(--color-champagne-gold);" data-config="courses.supernatural.priceDisplay"></p>
-                    <button class="btn btn-primary detail-btn" data-target="course-detail-personal">VIEW COURSE DETAILS &rarr;</button>
+                    <button class="btn btn-primary detail-btn" data-target="course-detail-personal">VIEW COURSE DETAILS <i data-lucide="arrow-right"></i></button>
                 </div>
             </div>
             
             <!-- Detail View (Hidden by default) -->
             <div class="container course-detail-view section-hidden" id="course-detail-personal">
-                <button class="btn btn-outline back-btn mb-2">&larr; BACK TO PATHS</button>
+                <button class="btn btn-outline back-btn mb-2"><i data-lucide="arrow-left"></i> BACK TO PATHS</button>
                 <div class="text-center">
                     <h3 class="hero-subtitle text-accent">THE SUPERNATURAL</h3>
                     <h1 class="heading-hero">6 MONTH PERSONAL COURSE</h1>
                     <p class="hero-quote">A complete journey of<br>identity, mindset and reality transformation.</p>
-                    <button class="btn btn-primary mt-2" id="btn-begin-personal">BEGIN YOUR JOURNEY &rarr;</button>
+                    <button class="btn btn-primary mt-2" id="btn-begin-personal">BEGIN YOUR JOURNEY <i data-lucide="arrow-right"></i></button>
                 </div>
                 
                 <div class="detail-editorial mt-4">
@@ -356,16 +358,16 @@
             </div>
             
             <div class="container course-detail-view section-hidden" id="course-detail-video">
-                <button class="btn btn-outline back-btn mb-2">&larr; BACK TO PATHS</button>
+                <button class="btn btn-outline back-btn mb-2"><i data-lucide="arrow-left"></i> BACK TO PATHS</button>
                 <div class="text-center">
                     <h3 class="hero-subtitle text-muted">VIDEO COURSE</h3>
                     <h1 class="heading-hero">JOB / MONEY MANIFESTATION</h1>
                     <p class="hero-quote">Transform your relationship with money,<br>possibility and your own potential.</p>
-                    <button class="btn btn-primary mt-2" id="btn-begin-video">BEGIN YOUR JOURNEY &rarr;</button>
+                    <button class="btn btn-primary mt-2" id="btn-begin-video">BEGIN YOUR JOURNEY <i data-lucide="arrow-right"></i></button>
                 </div>
-                <div class="text-center mt-4 text-muted">
+                <!-- <div class="text-center mt-4 text-muted">
                     <p>Course details to be unveiled soon.</p>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>
@@ -374,7 +376,7 @@
         <div class="container text-center">
             <h3 class="hero-subtitle">CONNECT & TRANSFORM</h3>
             <div class="social-links">
-                <a href="#" data-config-href="socials.youtube" target="_blank" class="btn btn-primary" style="background: rgba(200, 169, 107, 0.1);">WATCH ON YOUTUBE &rarr;</a>
+                <a href="#" data-config-href="socials.youtube" target="_blank" class="btn btn-primary" style="background: rgba(200, 169, 107, 0.1);">WATCH ON YOUTUBE <i data-lucide="arrow-right"></i></a>
             </div>
             <p class="text-muted mt-2">&copy; <span data-config="brand.established">2024</span> <span data-config="brand.name">Prathiba Senthil</span>. All rights reserved.</p>
         </div>
@@ -382,5 +384,8 @@
 
     <script src="js/config.js"></script>
     <script src="js/main.js?v=1.2"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>

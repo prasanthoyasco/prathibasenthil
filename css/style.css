@@ -2,8 +2,6 @@
    DESIGN YOUR DESTINY - DESIGN SYSTEM & STYLES
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap');
-
 :root {
     /* Colors */
     --color-cosmic-black: #050609;
@@ -135,6 +133,19 @@ h1, h2, h3, h4, h5, h6 {
 /* ==========================================================================
    UI COMPONENTS
    ========================================================================== */
+.lucide {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: -0.2em;
+    display: inline-block;
+}
+
+.icon-sm {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+}
+
 .btn {
     display: inline-block;
     padding: 1.2rem 2.5rem;
@@ -540,23 +551,40 @@ nav a:hover, nav a.active {
 .transition-content p { color: var(--color-muted-text); }
 
 /* Responsive */
+@media (max-width: 1024px) {
+    .split-layout { gap: 2rem; margin: 4rem auto; }
+    .heading-hero { font-size: clamp(2rem, 5vw, 4rem); }
+    .courses-grid { gap: 2rem; }
+    .hero-container { min-height: 60vh; }
+}
+
 @media (max-width: 768px) {
     header { padding: 1.5rem; flex-direction: column; gap: 1rem; }
-    nav ul { gap: 1.5rem; }
+    nav ul { gap: 1.5rem; flex-wrap: wrap; justify-content: center; }
     .split-layout { grid-template-columns: 1fr; gap: 2rem; margin: 3rem auto; }
     .founder-image { height: 400px; }
     .course-selection { grid-template-columns: 1fr; }
-    .pathway-split { gap: 2rem; }
+    .pathway-split { gap: 2rem; flex-direction: column; }
+    .branch-line { height: 20px; }
     .courses-grid { grid-template-columns: 1fr; gap: 2rem; }
     .premium-card { transform: scale(1); }
     .premium-card:hover { transform: translateY(-6px); }
-    section { padding: 6rem 0; }
+    section { padding: 5rem 0; }
     
     .back-btn {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+@media (max-width: 480px) {
+    .container { padding: 0 1.5rem; }
+    .heading-hero { font-size: clamp(1.8rem, 8vw, 2.5rem); }
+    .heading-section { font-size: clamp(1.5rem, 6vw, 2rem); }
+    .btn { padding: 1rem 1.5rem; width: 100%; text-align: center; }
+    .social-links { flex-direction: column; gap: 1rem; align-items: center; }
+    .glass-card { padding: 1.5rem; }
 }
 
 /* Footer */
