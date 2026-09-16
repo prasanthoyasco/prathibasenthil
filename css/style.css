@@ -227,11 +227,31 @@ header {
 }
 
 .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     font-family: var(--font-heading);
     font-size: 1.2rem;
     letter-spacing: 0.15em;
     color: var(--color-warm-ivory);
     text-decoration: none;
+    transition: var(--transition-medium);
+}
+
+.logo:hover .logo-text {
+    color: var(--color-champagne-gold);
+    transition: var(--transition-medium);
+}
+
+.logo-star {
+    display: inline-block;
+    color: var(--color-champagne-gold);
+    font-size: 1.1em;
+    transition: transform var(--transition-medium);
+}
+
+.logo:hover .logo-star {
+    transform: rotate(45deg) scale(0.85);
 }
 
 nav ul {
@@ -340,7 +360,7 @@ nav a:hover, nav a.active {
 .founder-image {
     width: 100%;
     height: 600px;
-    background: linear-gradient(rgba(21, 23, 37, 0.3), rgba(21, 23, 37, 0.3)), url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80') center/cover;
+    background: linear-gradient(rgba(21, 23, 37, 0.3), rgba(21, 23, 37, 0.3)), url('../img/Prathiba-Senthil-TNPSC.jpeg') center/cover;
     border-radius: 8px;
     border: 1px solid rgba(200, 169, 107, 0.2);
 }
@@ -467,9 +487,13 @@ nav a:hover, nav a.active {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    align-items: start;
+    align-items: stretch;
 }
-.course-card { position: relative; }
+.course-card { 
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+}
 .premium-card { transform: scale(1.02); }
 .premium-card:hover { transform: scale(1.02) translateY(-6px); }
 
@@ -489,7 +513,7 @@ nav a:hover, nav a.active {
 .course-card h4 { font-size: 1.5rem; line-height: 1.3; margin-bottom: 1.5rem; }
 .card-divider { border: 0; height: 1px; background: rgba(255,255,255,0.1); margin-bottom: 1.5rem; }
 .course-desc { color: var(--color-muted-text); margin-bottom: 1.5rem; }
-.course-features { list-style: none; margin-bottom: 2.5rem; }
+.course-features { list-style: none; margin-bottom: 2.5rem; flex-grow: 1; }
 .course-features li { color: var(--color-warm-ivory); margin-bottom: 0.5rem; font-size: 0.9rem; }
 .course-card .btn { width: 100%; text-align: center; }
 

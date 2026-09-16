@@ -87,7 +87,7 @@ const SOULVERSE_CONFIG = {
     let message = this.whatsappMessages[type] || this.whatsappMessages.general;
     
     if (customParam) {
-      message += " (" + customParam + ")";
+      message += " " + customParam + "";
     }
 
     return `${baseUrl}?text=${encodeURIComponent(message)}`;
