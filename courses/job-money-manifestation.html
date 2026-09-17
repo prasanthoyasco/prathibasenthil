@@ -20,14 +20,36 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Course",
-      "name": "Job / Money Manifestation Course",
-      "description": "Transform your relationship with money, possibility and your own potential.",
-      "provider": {
-        "@type": "Person",
-        "name": "Prathiba Senthil",
-        "url": "https://prathibasenthil.com/"
-      }
+      "@graph": [
+        {
+          "@type": "Course",
+          "name": "Job / Money Manifestation Course",
+          "description": "Transform your relationship with money, possibility and your own potential.",
+          "provider": {
+            "@type": "Person",
+            "name": "Prathiba Senthil",
+            "url": "https://prathibasenthil.com/about"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://prathibasenthil.com/"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Courses",
+            "item": "https://prathibasenthil.com/courses"
+          },{
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Job & Money Manifestation"
+          }]
+        }
+      ]
     }
     </script>
 </head>
@@ -62,7 +84,8 @@
             <a href="/courses" class="btn btn-outline back-btn mb-2" style="text-decoration: none; display: inline-block;"><i data-lucide="arrow-left"></i> BACK TO PATHS</a>
             <div class="text-center">
                 <h3 class="hero-subtitle text-muted">VIDEO COURSE</h3>
-                <h1 class="heading-hero">JOB & MONEY MANIFESTATION</h1>
+                <h1 style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;">Job & Money Manifestation Course</h1>
+                <div class="heading-hero">JOB & MONEY MANIFESTATION</div>
                 <p class="hero-quote">Transform your relationship with money,<br>possibility and your own potential.</p>
                 <a href="/design-your-destiny" class="btn btn-primary mt-2" style="text-decoration: none; display: inline-block;">BEGIN YOUR JOURNEY <i data-lucide="arrow-right"></i></a>
             </div>

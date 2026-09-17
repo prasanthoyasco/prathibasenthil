@@ -21,14 +21,36 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Course",
-      "name": "The Supernatural - 6 Month Personal Course",
-      "description": "A deeply guided journey designed to transform your identity, habits, mindset and relationship with your reality.",
-      "provider": {
-        "@type": "Person",
-        "name": "Prathiba Senthil",
-        "url": "https://prathibasenthil.com/"
-      }
+      "@graph": [
+        {
+          "@type": "Course",
+          "name": "The Supernatural - 6 Month Personal Course",
+          "description": "A deeply guided journey designed to transform your identity, habits, mindset and relationship with your reality.",
+          "provider": {
+            "@type": "Person",
+            "name": "Prathiba Senthil",
+            "url": "https://prathibasenthil.com/about"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://prathibasenthil.com/"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Courses",
+            "item": "https://prathibasenthil.com/courses"
+          },{
+            "@type": "ListItem",
+            "position": 3,
+            "name": "The Supernatural"
+          }]
+        }
+      ]
     }
     </script>
 </head>
@@ -63,7 +85,8 @@
             <a href="/courses" class="btn btn-outline back-btn mb-2" style="text-decoration: none; display: inline-block;"><i data-lucide="arrow-left"></i> BACK TO PATHS</a>
             <div class="text-center">
                 <h3 class="hero-subtitle text-accent">THE SUPERNATURAL</h3>
-                <h1 class="heading-hero">6 MONTH PERSONAL COURSE</h1>
+                <h1 style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;">The Supernatural — 6 Month Personal Transformation Course</h1>
+                <div class="heading-hero">6 MONTH PERSONAL COURSE</div>
                 <p class="hero-quote">A complete journey of<br>identity, mindset and reality transformation.</p>
                 <a href="/design-your-destiny" class="btn btn-primary mt-2" style="text-decoration: none; display: inline-block;">BEGIN YOUR JOURNEY <i data-lucide="arrow-right"></i></a>
             </div>

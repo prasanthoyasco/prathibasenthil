@@ -29,13 +29,45 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "@id": "https://prathibasenthil.com/#person",
-      "name": "Prathiba Senthil",
-      "jobTitle": "Manifestation Mentor & Coach",
-      "url": "https://prathibasenthil.com/",
-      "image": "https://prathibasenthil.com/img/super-natural-Manifestation-by-prathiba-senthil.jpeg",
-      "description": "A living testament to manifestation who teaches the practical tools to reprogram your subconscious mind and reshape your reality."
+      "@graph": [
+        {
+          "@type": "ProfilePage",
+          "@id": "https://prathibasenthil.com/about/#webpage",
+          "url": "https://prathibasenthil.com/about",
+          "name": "About Prathiba Senthil | Design Your Destiny",
+          "mainEntity": {
+            "@id": "https://prathibasenthil.com/#person"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://prathibasenthil.com/#person",
+          "name": "Prathiba Senthil",
+          "jobTitle": "Manifestation Mentor & Coach",
+          "url": "https://prathibasenthil.com/",
+          "image": "https://prathibasenthil.com/img/super-natural-Manifestation-by-prathiba-senthil.jpeg",
+          "description": "A living testament to manifestation who teaches the practical tools to reprogram your subconscious mind and reshape your reality.",
+          "sameAs": [
+            "https://instagram.com/Prathibasenthil.official",
+            "https://www.youtube.com/@Prathibas33",
+            "https://twitter.com/Prathibasenthil",
+            "https://linkedin.com/company/Prathibasenthil"
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://prathibasenthil.com/"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About"
+          }]
+        }
+      ]
     }
     </script>
 </head>
@@ -71,8 +103,8 @@
     <main id="app-content">
         <section id="about" class="active">
             <div class="container hero-container text-center">
-                <h3 class="hero-subtitle fade-up">ABOUT</h3>
-                <h1 class="heading-hero fade-up">DESIGN YOUR DESTINY</h1>
+                <h1 class="hero-subtitle fade-up" style="text-transform: uppercase;">About Prathiba Senthil</h1>
+                <div class="heading-hero fade-up">DESIGN YOUR DESTINY</div>
                 <p class="hero-quote fade-up">A journey from the life I was given<br>to the life I consciously created.</p>
             </div>
 
@@ -90,6 +122,7 @@
             </div>
 
             <div class="container transformation-story">
+                <h2 class="heading-section text-center fade-up" style="margin-bottom: 3rem;">My Transformation Journey</h2>
                 <div class="story-step fade-up">
                     <span class="step-num">01 &mdash; WHERE IT BEGAN</span>
                     <p>My journey began as a traditional housewife. I walked through life's toughest, darkest phases.</p>
@@ -108,31 +141,34 @@
                 </div>
             </div>
 
-            <div class="container beliefs-container">
-                <div class="glass-card belief-card fade-up">
-                    <span class="card-num">01</span>
-                    <h4>OUR VISION</h4>
-                    <p class="text-muted">To help people consciously create a reality that reflects the life they truly desire.</p>
-                </div>
-                <div class="glass-card belief-card fade-up">
-                    <span class="card-num">02</span>
-                    <h4>WHAT WE BELIEVE</h4>
-                    <p class="text-muted">Your external reality begins with your internal world.</p>
-                </div>
-                <div class="glass-card belief-card fade-up">
-                    <span class="card-num">03</span>
-                    <h4>WHAT WE OFFER</h4>
-                    <p class="text-muted">Practical tools, guidance and transformational programs.</p>
-                </div>
-                <div class="glass-card belief-card fade-up">
-                    <span class="card-num">04</span>
-                    <h4>HOW WE HELP</h4>
-                    <p class="text-muted">By showing you how to break free from limiting beliefs and revolutionize your life.</p>
-                </div>
-                <div class="glass-card belief-card fade-up">
-                    <span class="card-num">05</span>
-                    <h4>TRANSFORMATION</h4>
-                    <p class="text-muted">Unlocking the reality you truly deserve through intentional manifestation.</p>
+            <div class="container">
+                <h2 class="heading-section text-center fade-up">What I Believe & How I Help</h2>
+                <div class="beliefs-container" style="margin-top: 2rem;">
+                    <div class="glass-card belief-card fade-up">
+                        <span class="card-num">01</span>
+                        <h4>OUR VISION</h4>
+                        <p class="text-muted">To help people consciously create a reality that reflects the life they truly desire.</p>
+                    </div>
+                    <div class="glass-card belief-card fade-up">
+                        <span class="card-num">02</span>
+                        <h4>WHAT WE BELIEVE</h4>
+                        <p class="text-muted">Your external reality begins with your internal world.</p>
+                    </div>
+                    <div class="glass-card belief-card fade-up">
+                        <span class="card-num">03</span>
+                        <h4>WHAT WE OFFER</h4>
+                        <p class="text-muted">Practical tools, guidance and transformational programs.</p>
+                    </div>
+                    <div class="glass-card belief-card fade-up">
+                        <span class="card-num">04</span>
+                        <h4>HOW WE HELP</h4>
+                        <p class="text-muted">By showing you how to break free from limiting beliefs and revolutionize your life.</p>
+                    </div>
+                    <div class="glass-card belief-card fade-up">
+                        <span class="card-num">05</span>
+                        <h4>TRANSFORMATION</h4>
+                        <p class="text-muted">Unlocking the reality you truly deserve through intentional manifestation.</p>
+                    </div>
                 </div>
             </div>
         </section>

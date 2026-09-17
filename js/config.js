@@ -13,7 +13,7 @@ const SOULVERSE_CONFIG = {
     symbol: "✦",
     tagline: "Manifest A Brighter You",
     subtitle: "Your Thoughts Shape Your Reality",
-    established: "2024",
+    established: new Date().getFullYear().toString(),
     location: "Global Digital Sanctuary"
   },
 
