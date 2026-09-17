@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Your Destiny | Begin Your Journey</title>
+    
+    <meta name="description" content="Tell us about yourself and what you are looking for. Begin your manifestation journey with Prathiba Senthil.">
+    <link rel="canonical" href="https://prathibasenthil.com/design-your-destiny">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://prathibasenthil.com/design-your-destiny">
+    <meta property="og:title" content="Design Your Destiny | Begin Your Journey">
+    <meta property="og:description" content="Tell us about yourself and what you are looking for. Begin your manifestation journey.">
+    
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="cosmic-bg"></div>
+    <div class="stars"></div>
+
+    <div id="app-transition" class="active">
+        <div class="transition-content">
+            <span class="transition-star">✦</span>
+            <h2>YOUR JOURNEY AWAITS</h2>
+            <p>There is more than one path to your destination.</p>
+        </div>
+    </div>
+
+    <header>
+        <a href="/" class="logo">
+            <span class="logo-star">✦</span>
+            <span class="logo-text" data-config="brand.name">DESIGN YOUR DESTINY</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="/" class="nav-link">HOME</a></li>
+                <li><a href="/about" class="nav-link">ABOUT</a></li>
+                <li><a href="/courses" class="nav-link">JOURNEY</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="app-content">
+        <section id="form" class="active">
+            <div class="container text-center hero-container">
+                <h1 class="heading-hero fade-up">DESIGN YOUR DESTINY</h1>
+                <p class="hero-quote fade-up">Before you choose your path,<br>tell us where you are today.</p>
+                <p class="text-muted mt-1 fade-up">Tell us about yourself and what you are looking for.</p>
+            </div>
+
+            <div class="container form-container fade-up">
+                <form id="enquiry-form">
+                    <div class="form-step">
+                        <label>STEP 01<br>YOUR NAME</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        <div class="form-line"></div>
+                    </div>
+                    
+                    <div class="form-step">
+                        <label>STEP 02<br>EMAIL ADDRESS</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <div class="form-line"></div>
+                    </div>
+                    
+                    <div class="form-step">
+                        <label>STEP 03<br>MOBILE NUMBER</label>
+                        <div class="phone-input">
+                            <span>+91</span>
+                            <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number" required>
+                        </div>
+                        <div class="form-line"></div>
+                    </div>
+
+                    <div class="form-step">
+                        <label>STEP 04<br>WHAT ARE YOU LOOKING FOR?</label>
+                        <div class="course-selection">
+                            <div class="glass-card selection-card" data-value="video">
+                                <span class="card-num">01</span>
+                                <h4>VIDEO COURSE</h4>
+                                <p class="text-muted">Learn at your<br>own pace</p>
+                            </div>
+                            <div class="glass-card selection-card" data-value="personal">
+                                <span class="card-num">02</span>
+                                <h4>PERSONAL COURSE</h4>
+                                <p class="text-muted">Guided personal<br>transformation</p>
+                            </div>
+                        </div>
+                        <input type="hidden" id="course_type" name="course_type" required>
+                    </div>
+
+                    <div class="form-step">
+                        <label>STEP 05<br>TELL US ABOUT YOUR NEEDS</label>
+                        <textarea id="needs" name="needs" rows="4" placeholder="Tell us about your goals, challenges or the reality you want to change..." required></textarea>
+                        <div class="form-line"></div>
+                    </div>
+
+                    <div class="text-center mt-2">
+                        <button type="submit" class="btn btn-primary">SUBMIT YOUR JOURNEY <i data-lucide="arrow-right"></i></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer fade-up">
+        <div class="container text-center">
+            <h3 class="hero-subtitle">CONNECT & TRANSFORM</h3>
+            <div class="social-links">
+                <a href="#" data-config-href="socials.youtube" target="_blank" class="btn btn-primary" style="background: rgba(200, 169, 107, 0.1);">WATCH ON YOUTUBE <i data-lucide="arrow-right"></i></a>
+            </div>
+            <p class="text-muted mt-2">&copy; <span data-config="brand.established">2024</span> <span data-config="brand.name">Prathiba Senthil</span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/config.js" defer></script>
+    <script src="/js/lucide.min.js" defer></script>
+    <script src="/js/main.js" defer></script>
+    <script src="/js/animations.js" defer></script>
+    <script src="/js/enquiry.js" defer></script>
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        });
+    </script>
+</body>
+</html>

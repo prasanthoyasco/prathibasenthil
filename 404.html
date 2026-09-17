@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Design Your Destiny</title>
+    
+    <meta name="description" content="The page you are looking for does not exist. Return to Design Your Destiny.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="cosmic-bg"></div>
+    <div class="stars"></div>
+
+    <header>
+        <a href="/" class="logo">
+            <span class="logo-star">✦</span>
+            <span class="logo-text" data-config="brand.name">DESIGN YOUR DESTINY</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="/" class="nav-link">HOME</a></li>
+                <li><a href="/about" class="nav-link">ABOUT</a></li>
+                <li><a href="/courses" class="nav-link">JOURNEY</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="app-content">
+        <section class="container text-center hero-container" style="min-height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h1 class="heading-hero fade-up">404</h1>
+            <p class="hero-quote fade-up">The reality you are seeking<br>cannot be found on this path.</p>
+            <p class="text-muted mt-1 fade-up">Let us guide you back to your journey.</p>
+            
+            <div class="mt-4 fade-up">
+                <a href="/" class="btn btn-outline" style="text-decoration: none; display: inline-block; margin: 0 10px;">RETURN HOME</a>
+                <a href="/courses" class="btn btn-primary" style="text-decoration: none; display: inline-block; margin: 0 10px;">EXPLORE JOURNEYS <i data-lucide="arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer fade-up">
+        <div class="container text-center">
+            <p class="text-muted mt-2">&copy; <span data-config="brand.established">2024</span> <span data-config="brand.name">Prathiba Senthil</span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/config.js" defer></script>
+    <script src="/js/lucide.min.js" defer></script>
+    <script src="/js/main.js" defer></script>
+    <script src="/js/animations.js" defer></script>
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
