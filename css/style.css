@@ -50,7 +50,7 @@ body {
     width: 100vw;
     height: 100vh;
     min-height: 100vh;
-    background: linear-gradient(rgba(5, 6, 9, 0.6), rgba(5, 6, 9, 0.8)), url('../img/background2.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(5, 6, 9, 0.6), rgba(5, 6, 9, 0.8)), url('../img/prathiba_senthil_manifestation.jpg') center/cover no-repeat;
     opacity: 0.9;
     z-index: -2;
 }
@@ -504,6 +504,7 @@ nav a:hover, nav a.active {
     position: relative; 
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .premium-card { transform: scale(1.02); }
 .premium-card:hover { transform: scale(1.02) translateY(-6px); }
