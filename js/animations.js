@@ -1,5 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
     /* ==========================================================================
+       SCROLL ANIMATIONS (INTERSECTION OBSERVER)
+       ========================================================================== */
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15
+    };
+
+    const animateOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target.classList.contains('fade-up')) {
+                    entry.target.classList.add('visible');
+                } else if (entry.target.classList.contains('journey-line')) {
+                    entry.target.classList.add('draw');
+                }
+            }
+        });
+    }, observerOptions);
+
+    function triggerScrollAnimations() {
+        const fadeElements = document.querySelectorAll('.fade-up, .journey-line');
+        fadeElements.forEach(el => animateOnScroll.observe(el));
+    }
+
+    /* ==========================================================================
        CINEMATIC PAGE TRANSITIONS & ANIMATIONS
        ========================================================================== */
     const transitionOverlay = document.getElementById('app-transition');
@@ -50,32 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = url;
         }
     };
-
-    /* ==========================================================================
-       SCROLL ANIMATIONS (INTERSECTION OBSERVER)
-       ========================================================================== */
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.15
-    };
-
-    const animateOnScroll = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                if (entry.target.classList.contains('fade-up')) {
-                    entry.target.classList.add('visible');
-                } else if (entry.target.classList.contains('journey-line')) {
-                    entry.target.classList.add('draw');
-                }
-            }
-        });
-    }, observerOptions);
-
-    function triggerScrollAnimations() {
-        const fadeElements = document.querySelectorAll('.fade-up, .journey-line');
-        fadeElements.forEach(el => animateOnScroll.observe(el));
-    }
     
     // Highlight logic for courses page
     const urlParams = new URLSearchParams(window.location.search);
