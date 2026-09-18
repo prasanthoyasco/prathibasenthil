@@ -67,26 +67,6 @@
             padding-top: 2rem;
             border-top: 1px solid rgba(200, 169, 107, 0.2);
         }
-        .faq-item { margin-bottom: 2rem; }
-        .faq-item h4 { color: var(--color-champagne-gold); margin-bottom: 0.5rem; font-size: 1.25rem; }
-        .author-box {
-            margin-top: 4rem;
-            padding: 2rem;
-            background: rgba(21, 23, 37, 0.5);
-            border: 1px solid rgba(200, 169, 107, 0.2);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-        .author-image {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background-image: url('/img/super-natural-Manifestation-by-prathiba-senthil.jpeg');
-            background-size: cover;
-            background-position: center;
-        }
     </style>
     
     <script type="application/ld+json">
@@ -159,7 +139,7 @@
     </header>
 
     <main id="app-content">
-        <article class="container fade-up" style="padding-top: 120px;">
+        <article class="container" style="padding-top: 120px;">
             <div class="breadcrumb">
                 <a href="/">Home</a> &mdash; <a href="/blog">Blog</a> &mdash; Manifestation Techniques
             </div>
@@ -194,22 +174,27 @@
                 <div class="faq-section">
                     <h2>Frequently Asked Questions</h2>
                     
-                    <div class="faq-item">
-                        <h4>Do I have to do all these techniques every day?</h4>
-                        <p>No. It is better to choose one or two techniques and practice them consistently with high emotional intensity than to do all of them mechanically. The goal is to change your state of being, not to check boxes on a to-do list.</p>
-                    </div>
+                    <details class="faq-item">
+                        <summary><h4>Do I have to do all these techniques every day?</h4></summary>
+                        <div class="faq-content">
+                            <p>No. It is better to choose one or two techniques and practice them consistently with high emotional intensity than to do all of them mechanically. The goal is to change your state of being, not to check boxes on a to-do list.</p>
+                        </div>
+                    </details>
                     
-                    <div class="faq-item">
-                        <h4>What is the 369 method and does it work?</h4>
-                        <p>The 369 method (writing your desire 3 times in the morning, 6 times in the afternoon, and 9 times at night) is a popular focusing tool. It works because it forces consistent repetition and focus, keeping your intention top-of-mind. However, without the corresponding elevated emotion and action, writing alone is insufficient.</p>
-                    </div>
+                    <details class="faq-item">
+                        <summary><h4>What is the 369 method and does it work?</h4></summary>
+                        <div class="faq-content">
+                            <p>The 369 method (writing your desire 3 times in the morning, 6 times in the afternoon, and 9 times at night) is a popular focusing tool. It works because it forces consistent repetition and focus, keeping your intention top-of-mind. However, without the corresponding elevated emotion and action, writing alone is insufficient.</p>
+                        </div>
+                    </details>
                 </div>
 
                 <div class="author-box">
-                    <div class="author-image"></div>
+                    <div class="author-image desktop-only"></div>
                     <div>
                         <h4 style="color: var(--color-champagne-gold); margin-bottom: 0.5rem; font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;">About Prathiba Senthil</h4>
-                        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Prathiba Senthil offers practical, battle-tested tools to help individuals step out of limiting patterns and intentionally design the reality they desire.</p>
+                        <div class="author-image mobile-only" style="margin: 1rem auto;"></div>
+                        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Prathiba Senthil is a Manifestation Mentor who empowers individuals with practical techniques to reprogram their minds and elevate their lives.</p>
                         <a href="/about" style="font-size: 0.95rem;">Read my full story &rarr;</a>
                     </div>
                 </div>

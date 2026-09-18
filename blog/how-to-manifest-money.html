@@ -67,26 +67,6 @@
             padding-top: 2rem;
             border-top: 1px solid rgba(200, 169, 107, 0.2);
         }
-        .faq-item { margin-bottom: 2rem; }
-        .faq-item h4 { color: var(--color-champagne-gold); margin-bottom: 0.5rem; font-size: 1.25rem; }
-        .author-box {
-            margin-top: 4rem;
-            padding: 2rem;
-            background: rgba(21, 23, 37, 0.5);
-            border: 1px solid rgba(200, 169, 107, 0.2);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-        .author-image {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background-image: url('/img/super-natural-Manifestation-by-prathiba-senthil.jpeg');
-            background-size: cover;
-            background-position: center;
-        }
     </style>
     
     <script type="application/ld+json">
@@ -159,7 +139,7 @@
     </header>
 
     <main id="app-content">
-        <article class="container fade-up" style="padding-top: 120px;">
+        <article class="container" style="padding-top: 120px;">
             <div class="breadcrumb">
                 <a href="/">Home</a> &mdash; <a href="/blog">Blog</a> &mdash; How to Manifest Money
             </div>
@@ -208,22 +188,27 @@
                 <div class="faq-section">
                     <h2>Frequently Asked Questions</h2>
                     
-                    <div class="faq-item">
-                        <h4>Why do my money affirmations not work?</h4>
-                        <p>Affirmations only work if you actually believe them. If you repeat "I am a millionaire" but your body feels tight with anxiety and disbelief, you are energetically manifesting the anxiety, not the millions. You must start with believable stepping-stone affirmations, such as "I am open to discovering new ways to create value and wealth."</p>
-                    </div>
+                    <details class="faq-item">
+                        <summary><h4>Why do my money affirmations not work?</h4></summary>
+                        <div class="faq-content">
+                            <p>Affirmations only work if you actually believe them. If you repeat "I am a millionaire" but your body feels tight with anxiety and disbelief, you are energetically manifesting the anxiety, not the millions. You must start with believable stepping-stone affirmations, such as "I am open to discovering new ways to create value and wealth."</p>
+                        </div>
+                    </details>
                     
-                    <div class="faq-item">
-                        <h4>Can anyone change their money mindset?</h4>
-                        <p>Absolutely. Your subconscious programming is just a habitual pattern of thought. Through repetition, emotional elevation, and consistent practice, neuroplasticity allows anyone to rewire their brain for abundance.</p>
-                    </div>
+                    <details class="faq-item">
+                        <summary><h4>Can anyone change their money mindset?</h4></summary>
+                        <div class="faq-content">
+                            <p>Absolutely. Your subconscious programming is just a habitual pattern of thought. Through repetition, emotional elevation, and consistent practice, neuroplasticity allows anyone to rewire their brain for abundance.</p>
+                        </div>
+                    </details>
                 </div>
 
                 <div class="author-box">
-                    <div class="author-image"></div>
+                    <div class="author-image desktop-only"></div>
                     <div>
                         <h4 style="color: var(--color-champagne-gold); margin-bottom: 0.5rem; font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;">About Prathiba Senthil</h4>
-                        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Prathiba Senthil is a Manifestation Mentor who transitioned from a traditional life to achieving complete financial freedom. She now teaches the exact mindset shifts she used to transform her own reality.</p>
+                        <div class="author-image mobile-only" style="margin: 1rem auto;"></div>
+                        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Prathiba Senthil is a Manifestation Mentor and the founder of Design Your Destiny. Having transformed her own life from a traditional housewife to a successful entrepreneur, she now teaches others the practical tools to reprogram their subconscious minds.</p>
                         <a href="/about" style="font-size: 0.95rem;">Read my full story &rarr;</a>
                     </div>
                 </div>

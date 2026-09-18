@@ -67,26 +67,6 @@
             padding-top: 2rem;
             border-top: 1px solid rgba(200, 169, 107, 0.2);
         }
-        .faq-item { margin-bottom: 2rem; }
-        .faq-item h4 { color: var(--color-champagne-gold); margin-bottom: 0.5rem; font-size: 1.25rem; }
-        .author-box {
-            margin-top: 4rem;
-            padding: 2rem;
-            background: rgba(21, 23, 37, 0.5);
-            border: 1px solid rgba(200, 169, 107, 0.2);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-        .author-image {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background-image: url('/img/super-natural-Manifestation-by-prathiba-senthil.jpeg');
-            background-size: cover;
-            background-position: center;
-        }
     </style>
     
     <script type="application/ld+json">
@@ -159,7 +139,7 @@
     </header>
 
     <main id="app-content">
-        <article class="container fade-up" style="padding-top: 120px;">
+        <article class="container" style="padding-top: 120px;">
             <div class="breadcrumb">
                 <a href="/">Home</a> &mdash; <a href="/blog">Blog</a> &mdash; How to Manifest a Job
             </div>
@@ -198,22 +178,27 @@
                 <div class="faq-section">
                     <h2>Frequently Asked Questions</h2>
                     
-                    <div class="faq-item">
-                        <h4>What if I get rejected from a job I tried to manifest?</h4>
-                        <p>Rejection is often redirection. When a door closes, your mindset should not be "manifestation failed." Instead, it should be "this was not the highest alignment for me, something better is coming." Maintaining your high energetic state during rejection is the true test of your manifestation practice.</p>
-                    </div>
+                    <details class="faq-item">
+                        <summary><h4>What if I get rejected from a job I tried to manifest?</h4></summary>
+                        <div class="faq-content">
+                            <p>Rejection is often redirection. When a door closes, your mindset should not be "manifestation failed." Instead, it should be "this was not the highest alignment for me, something better is coming." Maintaining your high energetic state during rejection is the true test of your manifestation practice.</p>
+                        </div>
+                    </details>
                     
-                    <div class="faq-item">
-                        <h4>Do I still need to apply for jobs?</h4>
-                        <p>Yes. Manifestation is co-creation. You must participate in the physical world. Your aligned action (applying, networking) provides the channels through which your desired outcome can arrive.</p>
-                    </div>
+                    <details class="faq-item">
+                        <summary><h4>Do I still need to apply for jobs?</h4></summary>
+                        <div class="faq-content">
+                            <p>Yes. Manifestation is co-creation. You must participate in the physical world. Your aligned action (applying, networking) provides the channels through which your desired outcome can arrive.</p>
+                        </div>
+                    </details>
                 </div>
 
                 <div class="author-box">
-                    <div class="author-image"></div>
+                    <div class="author-image desktop-only"></div>
                     <div>
                         <h4 style="color: var(--color-champagne-gold); margin-bottom: 0.5rem; font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;">About Prathiba Senthil</h4>
-                        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Prathiba Senthil helps individuals break through their subconscious barriers to achieve profound career and life transformations.</p>
+                        <div class="author-image mobile-only" style="margin: 1rem auto;"></div>
+                        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Prathiba Senthil is a Manifestation Mentor who specializes in helping individuals break through subconscious blocks to create careers and lives of deep alignment and abundance.</p>
                         <a href="/about" style="font-size: 0.95rem;">Read my full story &rarr;</a>
                     </div>
                 </div>
