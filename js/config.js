@@ -20,10 +20,10 @@ const SOULVERSE_CONFIG = {
   // Contact Information
   contact: {
     // WhatsApp contact number (digits only without '+' or spaces for wa.me link)
-    whatsappNumber: "916381083284",
+    whatsappNumber: "917810068332",
     
     // Display formatted WhatsApp phone number for human reading
-    whatsappDisplay: "+91 63810 83284",
+    whatsappDisplay: "+91 78100 68332",
 
     // General official inquiry email
     email: "connect@prathibasenthil.com",
@@ -32,8 +32,8 @@ const SOULVERSE_CONFIG = {
     supportEmail: "connect@prathibasenthil.com",
     
     // Optional official calling line
-    phoneDisplay: "+91 63810 83284",
-    phoneTel: "++91 63810 83284"
+    phoneDisplay: "+91 78100 68332",
+    phoneTel: "++91 78100 68332"
   },
 
   // Pre-configured WhatsApp Messages for Conversions
